@@ -4,7 +4,8 @@
   "description": "Repo to test github action Testing git action",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Brandonawan/github-action-test/issues"
   },
-  "homepage": "https://github.com/Brandonawan/github-action-test#readme"
+  "homepage": "https://github.com/Brandonawan/github-action-test#readme",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
